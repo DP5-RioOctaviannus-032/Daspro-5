@@ -1,0 +1,50 @@
+program no_3;
+uses crt;
+var
+    x, y : real;
+begin
+    clrscr;
+    write('Masukkan titik x     : '); readln(x);
+    write('Masukkan titik y     : '); readln(y);
+
+    clrscr;
+    if (x>0) and (y>0) then
+        begin
+            writeln('Titik Anda berada di kuadaran 1');
+        end
+    else if (x<0) and (y>0) then
+        begin
+            writeln('Titik Anda berada di kuadaran 2');
+        end
+    else if (x<0) and (y<0) then
+        begin
+            writeln('Titik Anda berada di kuadaran 3');
+        end
+    else if (x>0) and (y<0) then
+        begin
+            writeln('Titik Anda berada di kuadaran 4');
+        end
+
+    else if (x>0) and (y=0) then
+        begin
+            writeln('Titik Anda berada di kuadaran 1 dan 4');
+        end
+    else if (x=0) and (y>0) then
+        begin
+            writeln('Titik Anda berada di kuadaran 1 dan 2');
+        end
+    else if (x<0) and (y=0) then
+        begin
+            writeln('Titik Anda berada di kuadaran 2 dan 3');
+        end
+    else if (x=0) and (y<0) then
+        begin
+            writeln('Titik Anda berada di kuadaran 3 dan 4');
+        end
+    else
+        begin
+            writeln('Titik Anda berada di pusat (0,0)')        
+        end;    
+        
+    readln;
+end.    

@@ -1,0 +1,15 @@
+program no_2;
+uses crt;
+var
+    nama_awal, nama_akhir : string;
+    suhu : real;
+begin
+    clrscr;
+    write('Masukkan nama awal   : '); readln(nama_awal);
+    write('Masukkan nama akhir  : '); readln(nama_akhir);
+    write('Masukkan suhu hari ini dalam celcius : '); readln(suhu);
+
+    clrscr;
+    writeln('Halo ',nama_awal,' ',nama_akhir,',',' hari ini bersuhu ',(suhu*4/5):0:2, ' reamur / ',(suhu+273):0:2,' Kelvin / ',((suhu*9/5)+32):0:2,' Farenheit.');
+    readln;
+end.    
